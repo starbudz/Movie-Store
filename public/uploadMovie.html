@@ -31,7 +31,7 @@
 	</div>
 	<br>
 	<br>
-	<a class="btn btn-secondary" href="../index.html">Home</a>
+	<a class="btn btn-secondary" href="../index.html"><i class="fa fa-fw fa-home"></i>Home</a>
 	<br>
 	<br>
 	<form class="form" action="upload.php">
@@ -57,7 +57,10 @@
     	</div>
     	<div class="col">
     		<legend>Movie Poster</legend>
-      		<input type="file" class="form-control form-control-file" id="poster" placeholder="Browse" name="poster">
+      		<div class="custom-file">
+    		<input type="file" class="custom-file-input" id="customFile">
+    		<label class="custom-file-label" for="customFile"><i class="fa fa-fw fa-folder-open-o"></i>Choose file</label>
+  			</div>
     	</div>
   		</div>
   		<div class="form-row">
@@ -79,10 +82,14 @@
   		<br>
   		<div class="form-row">
     	<div class="col">
-    		<input class="btn btn-primary" type="submit" name="save" value="Submit Data">	
+    		<button class="btn btn-primary" type="submit" name="save" value="Submit Data">
+    		<i class="fa fa-fw fa-floppy-o"></i>Submit
+    		</button>	
     	</div>
     	<div class="col">
-      		<input class="btn btn-warning" type="reset" name="reset" value="Reset Form">
+      		<button class="btn btn-warning" type="reset" name="reset" value="Reset Form">
+      		<i class="fa fa-fw fa-undo"></i>Reset
+      		</button>
     	</div>
   		</div>
 	</form>
