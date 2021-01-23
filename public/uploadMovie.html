@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Upload Movie</title>
+	<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../js/style.js"></script>
+    <script src="../bootstrap/js/bootstrap.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-grid.min.css">
+</head>
+<body>
+<div class="container">
+	<div class="jumbotron header">
+		<div class="row">
+			<div class="col-md-2">
+				<img src="../images/clapperboard.png">
+			</div>
+			<div class="col-md-6">
+				<h1 id="title">Upload a movie</h1>
+			</div>
+		</div>
+	</div>
+	<div class="alert alert-dark" role="alert">
+  	New offer, buy 1 get 1 free!!!
+	</div>
+	<br>
+	<br>
+	<a class="btn btn-secondary" href="../index.html">Home</a>
+	<br>
+	<br>
+	<form class="form" action="upload.php">
+  		<div class="form-row">
+    	<div class="col">
+    		<legend>Movie Name</legend>
+      		<input type="text" class="form-control" id="movieName" placeholder="Enter email" name="movieName">
+    	</div>
+    	<div class="col">
+    		<legend>Lead Actor</legend>
+      		<input type="text" class="form-control" id="leadActor" placeholder="Enter Lead Actor" name="leadActor">
+    	</div>
+  		</div>
+  		<div class="form-row">
+    	<div class="col">
+    		<legend>Duration</legend>
+      		<select type="select" class="form-control" id="duration" placeholder="Movie Duration" name="duration"><option>below 1 hour</option>
+      		<option>1.5 hours</option>
+      		<option>2.0 hours</option>
+      		<option>2.5 hours</option>
+      		<option>3.0 hours</option>
+      		</select>
+    	</div>
+    	<div class="col">
+    		<legend>Movie Poster</legend>
+      		<input type="file" class="form-control form-control-file" id="poster" placeholder="Browse" name="poster">
+    	</div>
+  		</div>
+  		<div class="form-row">
+    	<div class="col">
+    		<legend>Rating</legend>
+      		<select type="select" class="form-control" id="rating" placeholder="" name="rating">
+      		<option>G</option>
+      		<option>PG</option>
+      		<option>PG-13</option>
+      		<option>PG-16</option>
+      		<option>MA</option>
+      		</select>
+    	</div>
+    	<div class="col">
+    		<legend>Genre</legend>
+      		<input type="text" class="form-control" id="genre" placeholder="Enter Movie Genre" name="genre">
+    	</div>
+  		</div>
+  		<br>
+  		<div class="form-row">
+    	<div class="col">
+    		<input class="btn btn-primary" type="submit" name="save" value="Submit Data">	
+    	</div>
+    	<div class="col">
+      		<input class="btn btn-warning" type="reset" name="reset" value="Reset Form">
+    	</div>
+  		</div>
+	</form>
+	<br>
+	<br>
+	<br>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
